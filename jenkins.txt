@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Pushed To Git') {
+            steps {
+                echo 'Code is pushed to Git Successfully'
+            }
+      stage('Code Review In Git') {
+            steps {
+                echo 'Code is Reviewed By Project Manager & Merged to Master Branch'
+            }
+      stage('Create a Jenkins Job') {
+            steps {
+                echo 'Jenkins Job has been successfully'
+            }
+      
+      stage('Countinous Deployment & Integration') {
+            steps {
+                echo 'Countinous Deployment & Integration'
+            }
+      
+      stage('Deployment on Test Region') {
+            steps {
+                echo 'Testing Activities'
+            }
+      
+      stage('Deployment on Production') {
+            steps {
+                echo 'Deployment on Production is done'
+            }
+      
+      stage('Running the Job') {
+            steps {
+                echo 'Running the Job Successfully'
+            }
+      
+        }
+    }
+}
